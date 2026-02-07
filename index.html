@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XingCh — 關於我</title>
+  <meta name="description" content="嘿，我是 XingCh。歡迎來到我的小角落。">
+  <meta property="og:title" content="XingCh — 關於我">
+  <meta property="og:description" content="嘿，我是 XingCh。歡迎來到我的小角落。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>◆</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loading">
+  <!-- 細微的噪點紋理覆蓋層 -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <header class="header" id="header">
+    <a href="#" class="logo">XingCh<span class="logo-dot">.</span></a>
+    <nav class="nav">
+      <a href="#about" class="nav-link">關於</a>
+      <a href="#skills" class="nav-link">技能</a>
+      <a href="#contact" class="nav-link">聯繫</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-greeting" data-hero-anim>嘿，歡迎來到我的小角落 ——</p>
+        <h1 class="hero-title">
+          <span class="hero-title-line" data-hero-anim>
+            <span class="hero-title-word">我是 <em class="serif-italic">XingCh</em><span class="accent">.</span></span>
+          </span>
+        </h1>
+        <p class="hero-desc" data-hero-anim>
+          喜歡寫程式、玩 Minecraft、研究各種有趣的東西。<br>
+          這裡放了一些關於我的事，慢慢看吧。
+        </p>
+        <div class="hero-scroll" data-hero-anim>
+          <span class="hero-scroll-text">SCROLL</span>
+          <div class="hero-scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about section" id="about">
+      <div class="about-header">
+        <h2 class="about-title" data-reveal>關於我</h2>
+        <div class="about-accent-line" data-reveal data-delay="1"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <div class="about-text" data-reveal data-delay="2">
+            <p>
+              我是 <strong>XingCh</strong>，一個喜歡寫程式也喜歡折騰各種東西的人。
+              平常最常做的事大概就是坐在電腦前面寫 Code，然後偶爾抬頭看看窗外。
+            </p>
+            <p>
+              除了程式以外，我也對 Minecraft 伺服器營運很有興趣，
+              目前是「築夢藝境MC」的創始人。閒暇時會研究新技術、看看別人的專案，
+              或者就只是放空發呆。
+            </p>
+          </div>
+          <div class="about-facts" data-reveal data-delay="3">
+            <h3 class="about-facts-title">幾件關於我的小事</h3>
+            <ul class="facts-list">
+              <li>最常用的語言是 Python 和 C</li>
+              <li>Minecraft 玩了很多年，也開始自己架伺服器</li>
+              <li>喜歡把複雜的東西變簡單</li>
+              <li>覺得深色模式是世界上最棒的發明</li>
+              <li>正在學習更多新東西的路上</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="skills section" id="skills">
+      <div class="skills-header">
+        <h2 class="skills-heading" data-reveal>語言</h2>
+        <div class="skills-accent-line" data-reveal data-delay="1"></div>
+      </div>
+
+      <div class="skills-grid" data-stagger>
+        <!-- Python -->
+        <a href="https://www.python.org/" class="skill-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="skill-icon">
+            <svg viewBox="0 0 128 128" width="48" height="48"><linearGradient id="pyA" x1="0.344" x2="1" y1=".5" y2=".5" gradientTransform="matrix(137.975 0 0 56.002 -2.667 68.202)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#387EB8"/><stop offset="1" stop-color="#366994"/></linearGradient><path fill="url(#pyA)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/><linearGradient id="pyB" x1="0" x2=".668" y1=".5" y2=".5" gradientTransform="matrix(138.938 0 0 56.085 -9.235 67.678)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE052"/><stop offset="1" stop-color="#FFC331"/></linearGradient><path fill="url(#pyB)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/></svg>
+          </div>
+          <span class="skill-name">Python</span>
+        </a>
+        <!-- Java -->
+        <a href="https://www.java.com/" class="skill-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="skill-icon">
+            <svg viewBox="0 0 128 128" width="48" height="48"><path fill="#E76F00" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#E76F00" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.793 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/><path fill="#E76F00" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/><path fill="#E76F00" d="M76.491 1.587S89.459 14.563 64.188 33.21c-20.348 15.019-4.639 23.579-.006 33.381-11.873-10.715-20.587-20.148-14.741-28.935C58.03 24.97 81.354 18.927 76.491 1.587z"/><path fill="#E76F00" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/></svg>
+          </div>
+          <span class="skill-name">Java</span>
+        </a>
+        <!-- HTML -->
+        <a href="https://developer.mozilla.org/docs/Web/HTML" class="skill-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="skill-icon">
+            <svg viewBox="0 0 128 128" width="48" height="48"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/></svg>
+          </div>
+          <span class="skill-name">HTML</span>
+        </a>
+        <!-- C -->
+        <a href="https://en.cppreference.com/w/c" class="skill-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="skill-icon">
+            <svg viewBox="0 0 128 128" width="48" height="48"><path fill="#659AD2" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"/></svg>
+          </div>
+          <span class="skill-name">C</span>
+        </a>
+        <!-- C++ -->
+        <a href="https://isocpp.org/" class="skill-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="skill-icon">
+            <svg viewBox="0 0 128 128" width="48" height="48"><path fill="#659AD2" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"/><path fill="#fff" d="M100 59v6h-6v6h6v6h6v-6h6v-6h-6v-6zm-14 0v6h-6v6h6v6h6v-6h6v-6h-6v-6z"/></svg>
+          </div>
+          <span class="skill-name">C++</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== TEAMS ==================== -->
+    <section class="teams section" id="teams">
+      <div class="teams-header">
+        <h2 class="teams-heading" data-reveal>我參與的團隊</h2>
+        <div class="teams-accent-line" data-reveal data-delay="1"></div>
+      </div>
+
+      <div class="teams-grid" data-stagger>
+        <!-- 築夢藝境 -->
+        <a href="#" class="team-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="team-icon">
+            <img src="Dream Art.png" alt="築夢藝境">
+          </div>
+          <div class="team-info">
+            <span class="team-name">築夢藝境MC</span>
+            <span class="team-role">創始人</span>
+          </div>
+        </a>
+        <!-- Bailu Code -->
+        <a href="#" class="team-card" data-stagger-child target="_blank" rel="noopener">
+          <div class="team-icon">
+            <img src="bailu code.png" alt="Bailu Code">
+          </div>
+          <div class="team-info">
+            <span class="team-name">Bailu Code</span>
+            <span class="team-role">合作夥伴</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section" id="contact">
+      <div class="contact-content">
+        <h2 class="contact-heading" data-reveal>找到我</h2>
+        <div class="contact-accent-line" data-reveal data-delay="1"></div>
+        <div class="contact-icons" data-stagger>
+          <!-- Discord -->
+          <a href="https://discord.com/users/1046268942328537088" class="contact-icon-btn" data-stagger-child target="_blank" rel="noopener" aria-label="Discord (xingch_)">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:d20090405@gmail.com" class="contact-icon-btn" data-stagger-child aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/XingCh0405" class="contact-icon-btn" data-stagger-child target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/xingch._/" class="contact-icon-btn" data-stagger-child target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">XingCh — 用深色模式打造 ◆</p>
+      <a href="#hero" class="footer-top">回到最上面 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
