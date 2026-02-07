@@ -375,7 +375,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ----------------------------------------------------------
-     19. SMOOTH FADE FOR PAGE LOAD
+     19. BIRTHDAY COUNTDOWN (April 5)
+     ---------------------------------------------------------- */
+  function updateCountdown() {
+    const now = new Date();
+    let birthday = new Date(now.getFullYear(), 3, 5); // April = month 3 (0-indexed)
+
+    // If birthday already passed this year, target next year
+    if (now > birthday) {
+      birthday = new Date(now.getFullYear() + 1, 3, 5);
+    }
+
+    const diff = birthday - now;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    const daysEl = document.getElementById('cd-days');
+    const hoursEl = document.getElementById('cd-hours');
+    const minsEl = document.getElementById('cd-mins');
+    const secsEl = document.getElementById('cd-secs');
+
+    if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+    if (minsEl) minsEl.textContent = String(mins).padStart(2, '0');
+    if (secsEl) secsEl.textContent = String(secs).padStart(2, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ----------------------------------------------------------
+     20. SMOOTH FADE FOR PAGE LOAD
      ---------------------------------------------------------- */
   document.body.classList.remove('page-loading');
   document.body.classList.add('page-loaded');
